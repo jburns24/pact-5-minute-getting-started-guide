@@ -26,7 +26,7 @@ jobs:
           cache: 'npm'
       
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-package-lock --include=dev
       
       - name: Run consumer tests
         run: npm run test:consumer
